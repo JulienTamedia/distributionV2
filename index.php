@@ -15,6 +15,7 @@
 	</title
 </head>
 <body>
+<!-- Panel numero 1 qui contient les e-papers-->
 	<div id="panel1" class="ui-grid-solo panel">
 		<div class="ui-block-a"><div class="ui-bar ui-bar-a" id ="epaper">
 			<div class="layer">
@@ -22,8 +23,8 @@
 					<h1 id="texte_epaper">
 					Les informations quotidiennes <br /> <b>en un clin d'oeil</b>
 				</h1>
-				<img src="./assets/img/doigts.png">
-				</center>
+				<img id="img_epaper" src="./assets/img/doigts.png">
+				</center> 
 			</div>
 		</div></div>
 	</div>
