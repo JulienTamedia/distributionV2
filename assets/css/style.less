@@ -45,6 +45,7 @@ From http://meyerweb.com/eric/tools/css/reset/
 .DefaultPanel(){
 	height: 266px;
 	width: 100%;
+	background: #ef2d2d;
 }
 
 
@@ -62,7 +63,7 @@ From http://meyerweb.com/eric/tools/css/reset/
 	}
 
 //Panel des e-papers
-#panel1{
+#row1{
 	background: @defalutBackground;
 	#epaper{
 		background: url('./../img/header.jpg') no-repeat center;
@@ -88,3 +89,33 @@ From http://meyerweb.com/eric/tools/css/reset/
 	}
 }
 
+
+#row2{
+	#news{
+		
+		display: block;
+		.font;
+		#plume{
+			height: 30px;
+			width: auto;
+			position: absolute;
+			top:0px;
+			left: 10px;
+
+
+			
+
+		}
+		ul{
+
+			li{
+				vertical-align: center;
+				
+			}
+			li::before{
+				padding-top: 5px;
+				content:url('./../img/circle-right.png');
+			}
+		}
+	}
+}

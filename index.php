@@ -16,7 +16,7 @@
 </head>
 <body>
 <!-- Panel numero 1 qui contient les e-papers-->
-	<div id="panel1" class="ui-grid-solo panel">
+	<div id="row1" class="ui-grid-solo panel">
 		<div class="ui-block-a"><div class="ui-bar ui-bar-a" id ="epaper">
 			<div class="layer">
 			<center>
@@ -28,5 +28,10 @@
 			</div>
 		</div></div>
 	</div>
+<div class="ui-grid-b panel" id="row2">
+	<div class="ui-block-a" id="news"><?php Include('./includes/news.php'); ?></div>
+	<div class="ui-block-b">Block B</div>
+	<div class="ui-block-c">Block C</div>
+</div>
 </body>
 </html>
