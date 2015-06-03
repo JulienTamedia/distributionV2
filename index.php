@@ -17,21 +17,12 @@
 <body>
 <!-- Panel numero 1 qui contient les e-papers-->
 	<div id="row1" class="ui-grid-solo panel">
-		<div class="ui-block-a"><div class="ui-bar ui-bar-a" id ="epaper">
-			<div class="layer">
-			<center>
-					<h1 id="texte_epaper">
-					Les informations quotidiennes <br /> <b>en un clin d'oeil</b>
-				</h1>
-				<img id="img_epaper" src="./assets/img/doigts.png">
-				</center> 
-			</div>
-		</div></div>
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" id ="epaper"><?php include('./includes/epaper.php'); ?></div></div>
 	</div>
-<div class="ui-grid-b panel" id="row2">
-	<div class="ui-block-a" id="news"><?php Include('./includes/news.php'); ?></div>
-	<div class="ui-block-b">Block B</div>
-	<div class="ui-block-c">Block C</div>
+<div class="ui-grid-b" id="row2">
+	<div class="ui-block-a panel twenty" id="news"><?php Include('./includes/news.php'); ?></div>
+	<div class="ui-block-b panel ten">Block B</div>
+	<div class="ui-block-c panel fifty" id="village"><?php include('./includes/village.php') ?></div>
 </div>
 </body>
 </html>

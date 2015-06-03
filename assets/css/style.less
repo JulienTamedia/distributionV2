@@ -34,7 +34,7 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 //Mixins
 //Définis la font de base (Quicksand) avec les paramètre de base (possibilité de changer chaque paramètre) 
-.font(@fontFamily: 'Quicksand', sans-serif; @fontWeight: normal; @fontStyle: normal) {
+.font(@fontFamily: 'Quicksand', sans-serif;@fontWeight: normal; @fontStyle: normal) {
     font-family: @fontFamily;
     font-style: @fontStyle;
     font-weight: @fontWeight;
@@ -43,9 +43,10 @@ From http://meyerweb.com/eric/tools/css/reset/
 //défini la base de chaque mini-panel
 
 .DefaultPanel(){
-	height: 266px;
-	width: 100%;
+	height: 260px;
 	background: #ef2d2d;
+	margin: 20px 22px 0px 20px !important;
+	.font();
 }
 
 
@@ -54,22 +55,35 @@ From http://meyerweb.com/eric/tools/css/reset/
 	.DefaultPanel();
 }
 
+.fifty{
+	width: 50% !important;
+}
+
+.twenty{
+	width: 25% !important;
+}
+
+.ten{
+	width: 15% !important;
+}
+
+
 .layer{
 		width:100%;
-		height:266px;
+		height:100%;
 		background: @defalutBackground;
 		padding: 0;
+		margin: 0;
 		
 	}
 
 //Panel des e-papers
 #row1{
-	background: @defalutBackground;
 	#epaper{
+		width: 100%;
 		background: url('./../img/header.jpg') no-repeat center;
-		-webkit-background
-		-size: cover;
-		padding: 0px;
+		-webkit-background-size: cover;
+
 		#layer{
 			width:100%;
 			height:266px;
@@ -90,32 +104,35 @@ From http://meyerweb.com/eric/tools/css/reset/
 }
 
 
+
 #row2{
+
 	#news{
-		
 		display: block;
-		.font;
 		#plume{
 			height: 30px;
 			width: auto;
-			position: absolute;
-			top:0px;
-			left: 10px;
-
-
-			
-
+			position: relative;
+			left: 90%;
+			right: auto;
 		}
 		ul{
 
+			.dark_red{
+					background-color:#d62829;
+				}
 			li{
 				vertical-align: center;
-				
 			}
 			li::before{
-				padding-top: 5px;
 				content:url('./../img/circle-right.png');
 			}
 		}
 	}
+	#village{
+		background: url('./../img/commune.jpg') no-repeat center;
+		-webkit-background-size: cover;
+
+	}
+
 }
