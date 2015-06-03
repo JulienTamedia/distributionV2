@@ -1,0 +1,97 @@
+
+/*                                                  
++------------------------------------------+                   
+|             LESS Publication             |                   
+| ________________________________________ |                   
+|  22-68		        reset CSS          |                   
+|  73					Google Font        |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
+|                                          |                   
++------------------------------------------+                   
+*/
+/*Reset CSS 
+From http://meyerweb.com/eric/tools/css/reset/
+*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+//Variables
+@opacity:0.6;
+@defalutBackground:rgba(239,45,45,@opacity);
+@defaultTextColor: rgba(0, 0, 0, 0);
+
+//Mixins
+//Définis la font de base (Quicksand) avec les paramètre de base (possibilité de changer chaque paramètre) 
+.font(@fontFamily: 'Quicksand', sans-serif; @fontWeight: normal; @fontStyle: normal) {
+    font-family: @fontFamily;
+    font-style: @fontStyle;
+    font-weight: @fontWeight;
+}
+//défini la base de chaque mini-panel
+
+.DefaultPanel(){
+	height: 266px;
+	width: 100%;
+}
+
+
+//Class
+.panel{
+	.DefaultPanel();
+}
+
+.layer{
+		width:100%;
+		height:266px;
+		background: @defalutBackground;
+		padding: 0;
+		
+	}
+
+//Panel des e-papers
+
+#panel1{
+	background: @defalutBackground;
+	#epaper{
+		background: url('./../img/header.jpg') no-repeat center;
+		-webkit-background
+		-size: cover;
+		padding: 0px;
+		
+
+	}
+	#layer{
+			width:100%;
+			height:266px;
+			margin: 0;
+			
+			h1 {
+				.font();
+				font-size: 40px !important;
+				font-decoration : none;
+				text-align: center;
+			}
+			img{
+				display: block;
+				height: 100px;
+				width: auto;
+			}
+
+
+		
+		}
+}
+
