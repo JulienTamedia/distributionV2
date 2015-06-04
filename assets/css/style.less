@@ -29,8 +29,9 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 //Variables
 @opacity:0.6;
-@defalutBackground:rgba(239,45,45,@opacity);
+@defalutLayer:rgba(239,45,45,@opacity);
 @defaultTextColor: rgba(0, 0, 0, 0);
+@defalutBackground:rgba(239, 45, 45, 1);
 
 //Mixins
 //Définis la font de base (Quicksand) avec les paramètre de base (possibilité de changer chaque paramètre) 
@@ -65,13 +66,21 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 .ten{
 	width: 15% !important;
+	background: none;
+}
+.small{
+ margin: 0 10 0 10;
+ background-color: @defalutBackground;
+
+ height: 130px ;
+
 }
 
 
 .layer{
 		width:100%;
 		height:100%;
-		background: @defalutBackground;
+		background: @defalutLayer;
 		padding: 0;
 		margin: 0;
 		
@@ -86,7 +95,7 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 		#layer{
 			width:100%;
-			height:266px;
+			height:260px;
 			margin: 0;
 		}
 		#texte_epaper {
@@ -106,7 +115,6 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 
 #row2{
-
 	#news{
 		display: block;
 		#plume{
@@ -132,6 +140,25 @@ From http://meyerweb.com/eric/tools/css/reset/
 	#village{
 		background: url('./../img/commune.jpg') no-repeat center;
 		-webkit-background-size: cover;
+
+	}
+	#pub{
+		margin-bottom: 10px;
+		background: url('./../img/pub.jpg') no-repeat center;
+		-webkit-background-size: cover;
+
+	}
+	#jeunesse{
+		margin-top: 10px;
+		background: url('./../img/cloud.jpg') no-repeat center;
+		-webkit-background-size: cover;
+			text-align: center;
+
+		#logo_fvjc{
+			height: auto;
+			width: 50%;
+
+		}
 
 	}
 
