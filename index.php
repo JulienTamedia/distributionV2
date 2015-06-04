@@ -32,14 +32,14 @@
 	<div class="ui-block-c panel fifty" id="village"><?php include('./includes/village.php') ?></div>
 </div>
 <div class="ui-grid-b" id="row3">
-	<div class="ui-block-a panel twenty" id="diapo"><?php include('./includes/diapo.php') ?></div>
+	<div class="ui-block-a panel twenty" id="diapo"><div id="carre"></div> <?php include('./includes/diapo.php') ?></div>
 	<div class="ui-block-b panel fifty" id="concours"><?php include('./includes/concours.php') ?></div>
 	<div class="ui-block-c panel ten">
 		<div class="small" id="restaurant">
 			<?php include('./includes/restaurant.php') ?>
 		</div>
 		<div class="small" id="abbo">
-			
+			<?php include('./includes/abbo.php'); ?>
 
 		</div>
 	</div>

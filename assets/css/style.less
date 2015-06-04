@@ -80,7 +80,7 @@ From http://meyerweb.com/eric/tools/css/reset/
  height: 130px ;
 }
 
-h1{
+h1,h3{
 	font-weight: normal;
 }
 
@@ -193,8 +193,21 @@ h1{
 			height: 80px;
 			width: auto;
 			top:33%;
+			z-index: 0;
 
 		}
+
+		#carre{
+
+	width:100px;
+	height:@taillecarre;
+	background:#069;
+	-webkit-transform: rotate(-45deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
+    -moz-transform:  rotate(-45deg);
+    -o-transform:  rotate(-45deg);
+    transform:  rotate(-45deg);
+    z-index: 1;
+}
 	}
 	#concours{
 		background-color: @defalutBackground;
