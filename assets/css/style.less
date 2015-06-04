@@ -24,6 +24,10 @@
 From http://meyerweb.com/eric/tools/css/reset/
 */
 
+*{
+	padding: 0;
+	margin: 0;
+}
 
 @import url(http://fonts.googleapis.com/css?family=Quicksand);
 
@@ -33,6 +37,7 @@ From http://meyerweb.com/eric/tools/css/reset/
 @defaultTextColor: rgba(0, 0, 0, 0);
 @defalutBackground:rgba(239, 45, 45, 1);
 
+
 //Mixins
 //Définis la font de base (Quicksand) avec les paramètre de base (possibilité de changer chaque paramètre) 
 .font(@fontFamily: 'Quicksand', sans-serif;@fontWeight: normal; @fontStyle: normal) {
@@ -40,14 +45,15 @@ From http://meyerweb.com/eric/tools/css/reset/
     font-style: @fontStyle;
     font-weight: @fontWeight;
     color:rgba(255,255,255, 0);
+    text-transform: uppercase;
 }
 //défini la base de chaque mini-panel
 
 .DefaultPanel(){
-	height: 260px;
-	background: #ef2d2d;
+	height: 250px;
 	margin: 20px 22px 0px 20px !important;
 	.font();
+
 }
 
 
@@ -66,15 +72,18 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 .ten{
 	width: 15% !important;
-	background: none;
+	
 }
 .small{
  margin: 0 10 0 10;
  background-color: @defalutBackground;
-
  height: 130px ;
-
 }
+
+h1{
+	font-weight: normal;
+}
+
 
 
 .layer{
@@ -88,15 +97,18 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 //Panel des e-papers
 #row1{
+.font;
 	#epaper{
-		width: 100%;
-		background: url('./../img/header.jpg') no-repeat center;
+		background: url('./../img/header.jpg') no-repeat ;
 		-webkit-background-size: cover;
+		padding: 0;
+		
 
 		#layer{
-			width:100%;
+			width:auto;
 			height:260px;
 			margin: 0;
+			padding: 0;
 		}
 		#texte_epaper {
 			.font();
@@ -115,8 +127,10 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 
 #row2{
+	.font;
 	#news{
 		display: block;
+		background: #ef2d2d;
 		#plume{
 			height: 30px;
 			width: auto;
@@ -140,6 +154,9 @@ From http://meyerweb.com/eric/tools/css/reset/
 	#village{
 		background: url('./../img/commune.jpg') no-repeat center;
 		-webkit-background-size: cover;
+		#texte_village{
+			font-size: 40px !important;
+		}
 
 	}
 	#pub{
@@ -162,4 +179,43 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 	}
 
+}
+
+#row3{
+	.font;
+	#diapo{
+		background: url('./../img/galerie.jpg') no-repeat center;
+		-webkit-background-size: cover;
+		text-align: center;
+		display: block;
+		#photo{
+			position: relative;
+			height: 80px;
+			width: auto;
+			top:33%;
+
+		}
+	}
+	#concours{
+		background-color: @defalutBackground;
+		text-align: center;
+		#img_concours{
+			width: 50px;
+			height: auto ;
+		}
+
+	}
+	#restaurant{
+		margin-bottom: 10px;
+		background: url('./../img/restaurant.jpg') no-repeat center;
+		-webkit-background-size: cover;
+		text-align: center;
+		h1{
+			vertical-align: center;
+		}
+	}
+	#abbo{
+		margin-top: 10px;
+
+	}
 }

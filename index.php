@@ -21,8 +21,28 @@
 	</div>
 <div class="ui-grid-b" id="row2">
 	<div class="ui-block-a panel twenty" id="news"><?php Include('./includes/news.php'); ?></div>
-	<div class="ui-block-b panel ten">Block B</div>
+	<div class="ui-block-b panel ten">
+	<div class="small" id="pub">
+	</div>
+	<div class="small" id="jeunesse">
+		<?php include('./includes/jeunesse.php');?>
+	</div>
+
+	</div>
 	<div class="ui-block-c panel fifty" id="village"><?php include('./includes/village.php') ?></div>
+</div>
+<div class="ui-grid-b" id="row3">
+	<div class="ui-block-a panel twenty" id="diapo"><?php include('./includes/diapo.php') ?></div>
+	<div class="ui-block-b panel fifty" id="concours"><?php include('./includes/concours.php') ?></div>
+	<div class="ui-block-c panel ten">
+		<div class="small" id="restaurant">
+			<?php include('./includes/restaurant.php') ?>
+		</div>
+		<div class="small" id="abbo">
+			
+
+		</div>
+	</div>
 </div>
 </body>
 </html>
