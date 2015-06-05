@@ -51,7 +51,6 @@ From http://meyerweb.com/eric/tools/css/reset/
 
 .DefaultPanel(){
 	height: 250px;
-	margin: 20px 22px 0px 20px !important;
 	.font();
 
 }
@@ -67,15 +66,14 @@ From http://meyerweb.com/eric/tools/css/reset/
 }
 
 .twenty{
-	width: 25% !important;
+	width: 33% !important;
 }
 
 .ten{
-	width: 15% !important;
+	width: 17% !important;
 	
 }
 .small{
- margin: 0 10 0 10;
  background-color: @defalutBackground;
  height: 130px ;
 }
@@ -98,15 +96,15 @@ h1,h3{
 //Panel des e-papers
 #row1{
 .font;
+		
 	#epaper{
-		background: url('./../img/header.jpg') no-repeat ;
+background: url('./../img/header.jpg') no-repeat center;
 		-webkit-background-size: cover;
 		padding: 0;
-		
-
+		height: 250px;
 		#layer{
 			width:auto;
-			height:260px;
+			height:250px;
 			margin: 0;
 			padding: 0;
 		}
@@ -118,7 +116,7 @@ h1,h3{
 		}
 		#img_epaper{
 			display: block;
-			height: 100px;
+			height: 50px;
 			width: auto;
 		}
 	}
@@ -127,6 +125,7 @@ h1,h3{
 
 
 #row2{
+margin: 25px 0px 25px 0px;
 	.font;
 	#news{
 		display: block;
@@ -157,16 +156,38 @@ h1,h3{
 		#texte_village{
 			font-size: 40px !important;
 		}
+		
+			#banner{
+				position: relative;
+				margin:15px auto auto auto ;
+				height:33% ;
+				width: 100%;
+				background-color: red;
+			}
+			iframe{
+				width: 100%;
 
+			}
 	}
 	#pub{
-		margin-bottom: 10px;
-		background: url('./../img/pub.jpg') no-repeat center;
-		-webkit-background-size: cover;
+		margin: 0px 25px 25px 25px;
+		//background: url('./../img/pub.jpg') no-repeat center;
+		//-webkit-background-size: cover;
+		#slideshow > div { 
+    position: relative; 
+    top: 1px; 
+    left: 1px; 
+    right: 1px; 
+    bottom: 1px; 
+}
+#slideshow  img{
+	max-width: 100px;
+	height: auto;
+}
 
 	}
 	#jeunesse{
-		margin-top: 10px;
+		margin: 25px 25px 0px 25px;
 		background: url('./../img/cloud.jpg') no-repeat center;
 		-webkit-background-size: cover;
 			text-align: center;
@@ -174,9 +195,7 @@ h1,h3{
 		#logo_fvjc{
 			height: auto;
 			width: 50%;
-
 		}
-
 	}
 
 }
@@ -184,50 +203,55 @@ h1,h3{
 #row3{
 	.font;
 	#diapo{
+		margin-right: 25px;
 		background: url('./../img/galerie.jpg') no-repeat center;
 		-webkit-background-size: cover;
-		text-align: center;
+
+
+
+		#diapo_img{
 		display: block;
-		#photo{
-			position: relative;
-			height: 80px;
-			width: auto;
-			top:33%;
-			z-index: 0;
-
+			#carre{
+				width:100px;
+				height:100px;
+				background:@defalutLayer;
+				-webkit-transform: rotate(-45deg);/* t rotation de -45 degrés */
+				-moz-transform:  rotate(-45deg);
+				-o-transform:  rotate(-45deg);
+				transform:  rotate(-45deg);
+				margin:74px auto 0px 160px;
+			}
+			#photo{
+				height: auto;
+				width: 80px;
+				margin:-85px auto 0px 170px;
+				z-index: 999;
+				position:absolute;
+			}
+			
 		}
-
-		#carre{
-
-	width:100px;
-	height:@taillecarre;
-	background:#069;
-	-webkit-transform: rotate(-45deg);/* Agrandissement de la photo à l'échelle 1.4 et rotation de -10 degrés */
-    -moz-transform:  rotate(-45deg);
-    -o-transform:  rotate(-45deg);
-    transform:  rotate(-45deg);
-    z-index: 1;
-}
 	}
 	#concours{
+		width: 48%!important;
 		background-color: @defalutBackground;
 		text-align: center;
 		#img_concours{
 			width: 50px;
 			height: auto ;
 		}
-
 	}
 	#restaurant{
+		margin-left: 25px;
 		margin-bottom: 10px;
 		background: url('./../img/restaurant.jpg') no-repeat center;
 		-webkit-background-size: cover;
 		text-align: center;
 		h1{
-			vertical-align: center;
+		vertical-align: center;
 		}
 	}
 	#abbo{
+		margin-left: 25px;
 		margin-top: 10px;
 
 	}

@@ -1,3 +1,7 @@
+<?php   
+include_once('./assets/functions/functions.php');
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +14,9 @@
 <!-- Include the jQuery Mobile library -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="./assets/js/less.js" type="text/javascript"></script>
+<script type="text/javascript" src="./assets/js/jquery.js"></script>
 	<title>
-		Distribution
+		Distribution V.2
 	</title
 </head>
 <body>
@@ -23,6 +28,7 @@
 	<div class="ui-block-a panel twenty" id="news"><?php Include('./includes/news.php'); ?></div>
 	<div class="ui-block-b panel ten">
 	<div class="small" id="pub">
+	<?php include('./includes/pub.php') ?>
 	</div>
 	<div class="small" id="jeunesse">
 		<?php include('./includes/jeunesse.php');?>
@@ -32,7 +38,7 @@
 	<div class="ui-block-c panel fifty" id="village"><?php include('./includes/village.php') ?></div>
 </div>
 <div class="ui-grid-b" id="row3">
-	<div class="ui-block-a panel twenty" id="diapo"><div id="carre"></div> <?php include('./includes/diapo.php') ?></div>
+	<div class="ui-block-a panel twenty" id="diapo"> <?php include('./includes/diapo.php') ?></div>
 	<div class="ui-block-b panel fifty" id="concours"><?php include('./includes/concours.php') ?></div>
 	<div class="ui-block-c panel ten">
 		<div class="small" id="restaurant">
