@@ -10,9 +10,9 @@ while ($entry = $link->read()) {
 	
 	if(@getimagesize($path.$entry)){
 	$content .= '
-	<div>
-	<img src="'.$path.$entry.'">
-	</div>
+	<div class="item">
+            <img src="'.$path.$entry.'" width="100%" height="auto">
+        </div>
 	';
 }
 }

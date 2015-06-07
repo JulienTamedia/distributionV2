@@ -9,14 +9,14 @@ include_once('./assets/functions/functions.php');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Include jQuery Mobile stylesheets -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="./assets/looper.css">
 <!-- Include the jQuery library -->
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- Include the jQuery Mobile library -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="./assets/js/less.js" type="text/javascript"></script>
-<script type="text/javascript" src="./assets/js/jquery.js"></script>
 	<title>
-		Distribution V.2
+		Distribution V 2.0
 	</title
 </head>
 <body>
@@ -50,5 +50,9 @@ include_once('./assets/functions/functions.php');
 		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript" src="./assets/js/jquery.js"></script>
+<script type="text/javascript" src="./assets/js/looper.js"></script>
 </body>
 </html>
