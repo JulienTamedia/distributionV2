@@ -1,7 +1,7 @@
-<h3>
+<h4>
 	abonnements <br />
 	<b>digitaux</b>	<br />
 	Visauliser <br />
-	nos offres
-
-</h3>
+	nos offres <br />
+	<img src="./assets/img/fleche.png">
+</h4>

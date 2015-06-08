@@ -45,7 +45,7 @@ echo '</div>';
     font-style: normal;
     font-weight: normal;
     text-transform: uppercase;
-    color: white;
+   /* color: white;*/
 
 }
 
