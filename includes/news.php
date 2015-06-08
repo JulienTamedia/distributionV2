@@ -1,8 +1,30 @@
 <img id="plume" alt="plume" src="./assets/img/plumes.png">
-<ul>
-	<li>Lorem ipsum Laborum ad non do.</li>
-	<li class="dark_red">Lorem ipsum Sint quis commodo proident non.</li>
-	<li>Lorem ipsum Do quis nulla esse dolore.</li>
-	<li class="dark_red">Lorem ipsum Proident magna aliquip sunt do.</li>
-</ul>
 
+
+<?php 
+
+$articles = array();
+	$rssURL = "http://www.24heures.ch/vaud-regions/rss.html";
+    $article = file_get_contents($rssURL);
+    $x = new SimpleXmlElement($article);
+     
+     
+    foreach($x->channel->item as $entry) {
+         $articles[] = "<li><a href='$entry->link' title='$entry->title'>" . $entry->title . "</a></li>";
+    }
+
+
+
+$content = "";
+
+for ($i=0; $i <= 4 ; $i++) { 
+	$content.= $articles[$i];
+}
+
+?>
+
+<ul>
+	
+<?php echo $content; ?>
+
+</ul>

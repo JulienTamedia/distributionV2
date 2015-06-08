@@ -24,3 +24,4 @@ function generate_div_img($path){
 	return $content;
 }
 
+

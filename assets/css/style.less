@@ -141,15 +141,24 @@ margin: 25px 0px 25px 0px;
 		}
 		ul{
 
-			.dark_red{
-					background-color:#d62829;
-				}
 			li{
 				vertical-align: center;
+				.font;
+				a{
+					text-decoration: none;
+					color: @defaultTextColor;
+				}
 			}
 			li::before{
 				content:url('./../img/circle-right.png');
 			}
+		}
+		ul:nth-child(even){
+			background-color:#d62829;
+		}
+
+		ul:nth-child(odd){
+			background-color:@defalutBackground;
 		}
 	}
 	#village{
