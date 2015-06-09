@@ -5,16 +5,7 @@ include_once('./assets/functions/functions.php');
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet/less" type="text/css" href="./assets/css/style.less">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Include jQuery Mobile stylesheets -->
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
-<!-- Include the jQuery library -->
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<!-- Include the jQuery Mobile library -->
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script src="./assets/js/less.js" type="text/javascript"></script>
+<?php include('./includes/head.php'); ?>
 	<title>
 		Distribution V 2.0
 	</title>
@@ -35,7 +26,7 @@ include_once('./assets/functions/functions.php');
 	</div>
 
 	</div>
-	<div class="ui-block-c panel fifty" id="village"><?php include('./includes/village.php') ?></div>
+	<a href="./village.php"><div class="ui-block-c panel fifty" id="village"><?php include('./includes/village.php') ?></div></a>
 </div>
 <div class="ui-grid-b" id="row3">
 	<div class="ui-block-a panel twenty" id="diapo"> <?php include('./includes/diapo.php') ?></div>

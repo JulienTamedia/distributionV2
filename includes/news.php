@@ -14,10 +14,9 @@ $articles = array();
     }
 
 
-
 $content = "";
 
-for ($i=0; $i <= 4 ; $i++) { 
+for ($i=0; $i <= 3 ; $i++) { 
 	$content.= $articles[$i];
 }
 
@@ -28,3 +27,12 @@ for ($i=0; $i <= 4 ; $i++) {
 <?php echo $content; ?>
 
 </ul>
+
+
+<br />
+<a href="#" class="button"> d'avantage d'article</a>
+<style type="text/css">
+	
+
+
+</style>

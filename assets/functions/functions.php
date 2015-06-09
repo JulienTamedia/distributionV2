@@ -11,7 +11,7 @@ function generate_div_img($path){
 			if(@getimagesize($path.$entry)){
 			$content .= '
 			<li>
-			    <img src="'.$path.$entry.'" width="350px" height="auto">
+			    <img src="'.$path.$entry.'" width="200px" height="auto">
 			</li>
 			';
 			}
